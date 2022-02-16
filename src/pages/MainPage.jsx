@@ -1,9 +1,12 @@
 import React from 'react';
 import '../css/MainPage.css';
+import { useHistory } from 'react-router-dom';
 import image from '../images/mainImage.png';
 import jason from '../images/jason.png';
 
 export default function MainPage() {
+  const history = useHistory();
+
   return (
     <div className="MainPage">
       <h1>Movies and TV Shows Database</h1>
@@ -12,7 +15,7 @@ export default function MainPage() {
         <button type="button">
           SERIES
         </button>
-        <button type="button">
+        <button type="button" onClick={ () => history.push('/movies') }>
           MOVIES
         </button>
       </div>

@@ -31,7 +31,7 @@
   width: 300px;
 }
 
-button {
+.MainPage button {
   background-color: gray;
   border-radius: 15px;
   box-shadow: 0 0 18px red;

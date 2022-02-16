@@ -1,0 +1,32 @@
+.Card {
+  width: 15em;
+  height: 30em;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Card img {
+  width: 15em;
+  box-shadow: 0 0 14px white;
+  z-index: 1;
+}
+
+.Card h3 {
+  width: 12em;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 0 5px 10px red;
+  margin-bottom: 10px;
+}
+
+.Card span {
+  border: 1px solid white;
+  color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: black;
+}

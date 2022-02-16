@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import MovieProvider from './context/MovieProvider';
 import MainPage from './pages/MainPage';
-import fetchMovie from './services/MovieAPI';
+import Movies from './pages/Movies';
 
 export default function App() {
-  fetchMovie();
-
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={ MainPage } />
-      </Switch>
-    </BrowserRouter>
+    <MovieProvider>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={ MainPage } />
+          <Route path="/movies" exact component={ Movies } />
+        </Switch>
+      </BrowserRouter>
+    </MovieProvider>
   );
 }

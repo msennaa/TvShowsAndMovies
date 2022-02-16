@@ -1,0 +1,40 @@
+.title-button {
+  border: none;
+  outline: none;
+  background-color:rgba(66, 65, 65, 0.9);
+  font-size: 30px;
+  text-shadow: 0 5px 23px red;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  background-color:rgba(66, 64, 65, 0.9);
+  align-items: center;
+  font-size: 30px;
+  text-shadow: 0 5px 10px red;
+}
+
+.search-container {
+  display: flex;
+  background-color:rgba(66, 65, 65, 0.9);
+  align-items: center;
+}
+
+.search-container input, .search-container button {
+    background-color: white;
+    border-radius: 15px;
+    height: 30px;
+    outline: none;
+    box-shadow: 0 0 18px red;
+    margin-left: 10px;
+}
+
+.search-container button {
+  width: 80px;
+  align-items: center;
+}
