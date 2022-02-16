@@ -1,0 +1,51 @@
+.MainPage {
+  color: white;
+}
+
+.MainPage h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 0 5px 10px red;
+}
+
+.first-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  width: 20%;
+}
+
+.jason {
+  object-fit: contain;
+  width: 300px;
+}
+
+button {
+  background-color: gray;
+  border-radius: 15px;
+  box-shadow: 0 0 18px red;
+  color: rgb(179, 0, 0);
+  cursor: pointer;
+  font-weight: 600;
+  height: 5%;
+  padding: 0.9%;
+  width: 10%;
+}
+
+hr {
+  border: none;
+  box-shadow: 0 5px 10px red;
+  margin-bottom: 30px;
+  padding: 1px;
+}
