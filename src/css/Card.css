@@ -6,12 +6,16 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  border: none;
 }
 
 .Card img {
   width: 15em;
   box-shadow: 0 0 14px white;
   z-index: 1;
+  cursor: pointer;
 }
 
 .Card h3 {

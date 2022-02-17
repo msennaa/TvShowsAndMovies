@@ -5,12 +5,15 @@ import MovieContext from './MovieContext';
 export default function MovieProvider({ children }) {
   const [searchMovie, setSearchMovie] = useState([]);
   const [searchValue, setSearchValue] = useState('');
+  const [detailsMovie, setDetailsMovie] = useState({});
 
   const store = {
     searchMovie,
     setSearchMovie,
     setSearchValue,
     searchValue,
+    detailsMovie,
+    setDetailsMovie,
   };
 
   return (

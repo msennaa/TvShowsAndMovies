@@ -68,6 +68,7 @@ export default function Movies() {
               release={ movie.release_date }
               image={ movie.poster_path }
               id={ movie.id }
+              overview={ movie.overview }
             />
           ))
         }
