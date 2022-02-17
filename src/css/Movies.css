@@ -10,5 +10,35 @@
 .movie-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.category-buttons {
+  color: white;
+  height: 30px;
+  flex-basis: 16%;
+  width: 100px;
+  text-shadow: 0 5px 10px red;
+  font-size: 30px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.category-buttons:hover {
+  color: red;
+  height: 30px;
+  flex-basis: 16%;
+  width: 100px; 
+  font-size: 30px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.genre-container {
+  display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }

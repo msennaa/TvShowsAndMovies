@@ -4,6 +4,7 @@ import '../css/Header.css';
 import { useState } from 'react/cjs/react.development';
 import { fetchSearchMovie } from '../services/MoviesAPI';
 import MovieContext from '../context/MovieContext';
+import { fetchSearchSeries } from '../services/SeriesAPI';
 
 export default function Header(props) {
   const { title } = props;
@@ -11,13 +12,22 @@ export default function Header(props) {
   const { setSearchMovie, setSearchValue } = useContext(MovieContext);
 
   const searchMovie = async () => {
-    setSearchMovie(await fetchSearchMovie(input));
-    setSearchValue(input);
+    if (window.location.pathname === '/series') {
+      setSearchMovie(await fetchSearchSeries(input));
+      setSearchValue(input);
+      setInput('');
+    } else {
+      setSearchMovie(await fetchSearchMovie(input));
+      setSearchValue(input);
+      setInput('');
+    }
   };
 
   const reload = () => {
     window.location.reload();
   };
+
+  console.log(window.location.pathname);
 
   return (
     <div className="Header">
