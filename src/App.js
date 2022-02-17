@@ -4,6 +4,7 @@ import MovieProvider from './context/MovieProvider';
 import MainPage from './pages/MainPage';
 import Movies from './pages/Movies';
 import Series from './pages/Series';
+import Details from './pages/Details';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Route path="/" exact component={ MainPage } />
           <Route path="/movies" exact component={ Movies } />
           <Route path="/series" exact component={ Series } />
+          <Route path="/movies/:id" exact component={ Details } />
         </Switch>
       </BrowserRouter>
     </MovieProvider>

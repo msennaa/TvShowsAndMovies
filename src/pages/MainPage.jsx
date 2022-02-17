@@ -22,7 +22,7 @@ export default function MainPage() {
       <hr />
       <div className="second-container">
         <button type="button">
-          ACTORS
+          UPCOMING
         </button>
         <img className="jason" src={ jason } alt="movies and tv shows logo" />
       </div>
