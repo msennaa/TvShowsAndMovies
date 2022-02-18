@@ -27,8 +27,6 @@ export default function Header(props) {
     window.location.reload();
   };
 
-  console.log(window.location.pathname);
-
   return (
     <div className="Header">
       <button onClick={ reload } type="button" className="title-button">

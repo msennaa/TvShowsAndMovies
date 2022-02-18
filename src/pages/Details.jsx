@@ -20,9 +20,6 @@ export default function Details(props) {
     getReview();
   }, []);
 
-  console.log(review);
-  console.log(detailsMovie);
-
   return (
     <div className="Details">
       <div className="info">
@@ -34,10 +31,12 @@ export default function Details(props) {
       </div>
       <div className="overview">
         <img src={ `https://image.tmdb.org/t/p/w500${detailsMovie.image}` } alt="oi" />
-        <h1>Overview:</h1>
-        <p>
-          {detailsMovie.overview}
-        </p>
+        <div className="overview-container">
+          <h1>Overview:</h1>
+          <p>
+            {detailsMovie.overview}
+          </p>
+        </div>
       </div>
       <div>
         {

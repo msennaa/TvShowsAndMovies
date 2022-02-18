@@ -33,6 +33,9 @@ export default function Movies() {
     getGenreList();
   }, [searchMovie]);
 
+  console.log(popularMovies);
+  console.log(genres);
+
   return (
     <div className="Movies">
       <Header title="Movies" />

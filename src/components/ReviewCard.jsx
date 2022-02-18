@@ -1,16 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react/cjs/react.development';
 import PropTypes from 'prop-types';
 import avatar from '../images/avatar.png';
 import '../css/ReviewCard.css';
 
 export default function ReviewCard(props) {
-  const { name, content } = props;
-  // const teste = 'https://secure.gravatar.com/avatar';
-  // https://secure.gravatar.com/avatar/992eef352126a53d7e141bf9e8707576.jpg
+  const { name, content, image } = props;
+  const [src, setSrc] = useState('');
+  const magicNumber = 60;
+
+  const getAvatarImage = () => {
+    if (image === null) {
+      setSrc('');
+    } else if (image.length > magicNumber) {
+      const oi = image.substr(1);
+      setSrc(oi);
+    } else {
+      setSrc(`https://image.tmdb.org/t/p/w500${image}`);
+    }
+  };
+
+  useEffect(() => {
+    getAvatarImage();
+  }, []);
+
   return (
     <div className="ReviewCard">
       <div className="author">
-        <img src={ avatar } alt="logo" />
+        {
+          src === '' ? (
+            <img src={ avatar } alt="logo" />
+          ) : (
+            <img src={ src } alt="logo" />
+          )
+        }
         <h1>{name}</h1>
       </div>
       <div className="content">
@@ -23,4 +46,5 @@ export default function ReviewCard(props) {
 ReviewCard.propTypes = {
   name: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
