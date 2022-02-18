@@ -6,6 +6,7 @@ export default function MovieProvider({ children }) {
   const [searchMovie, setSearchMovie] = useState([]);
   const [searchValue, setSearchValue] = useState('');
   const [detailsMovie, setDetailsMovie] = useState({});
+  const [detailsTvShow, setDetailsTvShow] = useState({});
 
   const store = {
     searchMovie,
@@ -14,6 +15,8 @@ export default function MovieProvider({ children }) {
     searchValue,
     detailsMovie,
     setDetailsMovie,
+    setDetailsTvShow,
+    detailsTvShow,
   };
 
   return (

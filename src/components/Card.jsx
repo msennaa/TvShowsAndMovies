@@ -6,7 +6,7 @@ import '../css/Card.css';
 
 export default function Card(props) {
   const { image, name, ranking, overview, release, id } = props;
-  const { setDetailsMovie } = useContext(MovieContext);
+  const { setDetailsMovie, setDetailsTvShow } = useContext(MovieContext);
   const history = useHistory();
 
   const submitInfo = () => {
@@ -18,8 +18,14 @@ export default function Card(props) {
       release,
       id,
     };
-    setDetailsMovie(newObj);
-    history.push(`/movies/${id}`);
+
+    if (window.location.pathname === '/movies') {
+      setDetailsMovie(newObj);
+      history.push(`/movies/${id}`);
+    } else {
+      setDetailsTvShow(newObj);
+      history.push(`/series/${id}`);
+    }
   };
 
   return (

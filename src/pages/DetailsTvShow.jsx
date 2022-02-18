@@ -3,38 +3,40 @@ import PropTypes from 'prop-types';
 import { useState } from 'react/cjs/react.development';
 import MovieContext from '../context/MovieContext';
 import '../css/Details.css';
-import { fetchMovieReview } from '../services/MoviesAPI';
+import { fetchTvShowReview } from '../services/SeriesAPI';
 import ReviewCard from '../components/ReviewCard';
 
-export default function Details(props) {
-  const { detailsMovie } = useContext(MovieContext);
+export default function DetailsTvShow(props) {
+  const { detailsTvShow } = useContext(MovieContext);
   const [review, setReview] = useState([]);
 
   const getReview = async () => {
     const { match } = props;
     const { id } = match.params;
-    setReview(await fetchMovieReview(id));
+    setReview(await fetchTvShowReview(id));
   };
 
   useEffect(() => {
     getReview();
   }, []);
 
+  console.log(review);
+
   return (
     <div className="Details">
       <div className="info">
         <div className="info-movie">
-          <h1>{ detailsMovie.name }</h1>
-          <h3>{`Release Date: ${detailsMovie.release}`}</h3>
+          <h1>{ detailsTvShow.name }</h1>
+          <h3>{`Release Date: ${detailsTvShow.release}`}</h3>
         </div>
-        <span>{`IMDB Rating: ${detailsMovie.ranking} ★`}</span>
+        <span>{`IMDB Rating: ${detailsTvShow.ranking} ★`}</span>
       </div>
       <div className="overview">
-        <img src={ `https://image.tmdb.org/t/p/w500${detailsMovie.image}` } alt="oi" />
+        <img src={ `https://image.tmdb.org/t/p/w500${detailsTvShow.image}` } alt="oi" />
         <div className="overview-container">
           <h1>Overview:</h1>
           <p>
-            {detailsMovie.overview}
+            {detailsTvShow.overview}
           </p>
         </div>
       </div>
@@ -43,7 +45,7 @@ export default function Details(props) {
           review.length > 0 ? (
             <h1 className="review">Reviews</h1>
           ) : (
-            <h1 className="review">Movie without review</h1>
+            <h1 className="review">Without review</h1>
           )
         }
         {
@@ -61,7 +63,7 @@ export default function Details(props) {
   );
 }
 
-Details.propTypes = {
+DetailsTvShow.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.objectOf(PropTypes.string),
   }).isRequired,

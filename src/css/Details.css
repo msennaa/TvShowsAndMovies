@@ -44,3 +44,19 @@
   margin-bottom: 30px;
   text-shadow: 0 5px 10px red;
 }
+
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-container h1 {
+  text-shadow: 0 5px 10px red;
+  margin-bottom: 30px;
+}
+
+.tvShow {
+  color: white;
+}
