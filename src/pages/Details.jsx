@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useState } from 'react/cjs/react.development';
+import { useHistory } from 'react-router-dom';
 import MovieContext from '../context/MovieContext';
 import '../css/Details.css';
 import { fetchMovieReview } from '../services/MoviesAPI';
@@ -9,6 +10,7 @@ import ReviewCard from '../components/ReviewCard';
 export default function Details(props) {
   const { detailsMovie } = useContext(MovieContext);
   const [review, setReview] = useState([]);
+  const history = useHistory();
 
   const getReview = async () => {
     const { match } = props;
@@ -27,6 +29,13 @@ export default function Details(props) {
           <h1>{ detailsMovie.name }</h1>
           <h3>{`Release Date: ${detailsMovie.release}`}</h3>
         </div>
+        <button
+          className="back"
+          type="button"
+          onClick={ () => history.push('/series') }
+        >
+          Movies
+        </button>
         <span>{`IMDB Rating: ${detailsMovie.ranking} ★`}</span>
       </div>
       <div className="overview">
