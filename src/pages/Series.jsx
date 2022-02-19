@@ -33,7 +33,7 @@ export default function Series() {
     getGenreList();
   }, [searchMovie]);
 
-  console.log(genres);
+  console.log(popularSeries);
 
   return (
     <div className="Movies">
@@ -71,6 +71,7 @@ export default function Series() {
               image={ serie.poster_path }
               id={ serie.id }
               overview={ serie.overview }
+              genre={ serie.genre_ids }
             />
           ))
         }

@@ -1,5 +1,7 @@
 .Movies {
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .Movies h1 {
@@ -43,4 +45,11 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  border: 1px solid white;
+  width: 90%;
+  align-self: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 14px red;
+  border: 1px solid rgb(172, 0, 0);
 }

@@ -5,7 +5,7 @@ import MovieContext from '../context/MovieContext';
 import '../css/Card.css';
 
 export default function Card(props) {
-  const { image, name, ranking, overview, release, id } = props;
+  const { image, name, ranking, overview, release, id, genre } = props;
   const { setDetailsMovie, setDetailsTvShow } = useContext(MovieContext);
   const history = useHistory();
 
@@ -17,6 +17,7 @@ export default function Card(props) {
       overview,
       release,
       id,
+      genre,
     };
 
     if (window.location.pathname === '/movies') {
@@ -44,4 +45,5 @@ Card.propTypes = {
   overview: PropTypes.string.isRequired,
   release: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
+  genre: PropTypes.number.isRequired,
 };

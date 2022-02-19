@@ -31,3 +31,15 @@ export const genreTvShowList = async () => {
   const response = await fetch(listUrl).then((result) => result.json());
   return response.genres;
 };
+
+export const fetchTvShowDetails = async (id) => {
+  const listUrl = `${baseUrl}/tv/${id}?${apiKey}`;
+  const response = await fetch(listUrl).then((result) => result.json());
+  return response;
+};
+
+export const fetchTvVideo = async (id) => {
+  const listUrl = `${baseUrl}/tv/${id}/videos?${apiKey}`;
+  const response = await fetch(listUrl).then((result) => result.json());
+  return response.results;
+};
