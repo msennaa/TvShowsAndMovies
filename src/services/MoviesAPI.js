@@ -43,5 +43,3 @@ export const fetchMovieVideo = async (id) => {
   const response = await fetch(listUrl).then((result) => result.json());
   return response.results;
 };
-
-// https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=11f7f74a9c3f21eccd198b02d389c5e6&with_genres=28

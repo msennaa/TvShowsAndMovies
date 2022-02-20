@@ -12,17 +12,14 @@ export default function MainPage() {
       <h1>Movies and TV Shows Database</h1>
       <div className="first-container">
         <img className="image" src={ image } alt="movies and tv shows logo" />
-        <button type="button" onClick={ () => history.push('/series') }>
-          SERIES
-        </button>
         <button type="button" onClick={ () => history.push('/movies') }>
           MOVIES
         </button>
       </div>
       <hr />
       <div className="second-container">
-        <button type="button">
-          UPCOMING
+        <button type="button" onClick={ () => history.push('/series') }>
+          SERIES
         </button>
         <img className="jason" src={ jason } alt="movies and tv shows logo" />
       </div>
