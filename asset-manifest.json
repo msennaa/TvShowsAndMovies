@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TvShowsAndMovies/static/css/main.28220ad8.chunk.css",
+    "main.js": "/TvShowsAndMovies/static/js/main.ab0514c4.chunk.js",
+    "main.js.map": "/TvShowsAndMovies/static/js/main.ab0514c4.chunk.js.map",
+    "runtime-main.js": "/TvShowsAndMovies/static/js/runtime-main.d8d0a39c.js",
+    "runtime-main.js.map": "/TvShowsAndMovies/static/js/runtime-main.d8d0a39c.js.map",
+    "static/js/2.cbad5793.chunk.js": "/TvShowsAndMovies/static/js/2.cbad5793.chunk.js",
+    "static/js/2.cbad5793.chunk.js.map": "/TvShowsAndMovies/static/js/2.cbad5793.chunk.js.map",
+    "index.html": "/TvShowsAndMovies/index.html",
+    "static/css/main.28220ad8.chunk.css.map": "/TvShowsAndMovies/static/css/main.28220ad8.chunk.css.map",
+    "static/js/2.cbad5793.chunk.js.LICENSE.txt": "/TvShowsAndMovies/static/js/2.cbad5793.chunk.js.LICENSE.txt",
+    "static/media/avatar.947dab13.png": "/TvShowsAndMovies/static/media/avatar.947dab13.png",
+    "static/media/jason.cc2fcdf4.png": "/TvShowsAndMovies/static/media/jason.cc2fcdf4.png",
+    "static/media/mainImage.e75f1312.png": "/TvShowsAndMovies/static/media/mainImage.e75f1312.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8d0a39c.js",
+    "static/js/2.cbad5793.chunk.js",
+    "static/css/main.28220ad8.chunk.css",
+    "static/js/main.ab0514c4.chunk.js"
+  ]
+}
