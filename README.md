@@ -26,7 +26,7 @@ Esta projeto é uma inspiração aos sites TMDB e IMDB.Esta aplicação possui a
   </summary><br>
 
   - `start`: Roda a aplicação;
-    - *uso (na raiz do projeto): `npm run dev`*
+    - *uso (na raiz do projeto): `npm start`*
 
 </details>
 
