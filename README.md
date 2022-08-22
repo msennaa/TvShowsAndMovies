@@ -1,6 +1,6 @@
 # Boas-vindas ao repositório The Movie Database!
 
-Esta projeto é uma inspiração aos sites TMDB e IMDB.Esta aplicação possui as seguintes funcionalidades:
+O projeto é uma inspiração aos sites TMDB e IMDB.Esta aplicação possui as seguintes funcionalidades:
 
 1- Buscar por qualquer filme ou serie.
 
