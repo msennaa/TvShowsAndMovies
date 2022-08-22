@@ -22,6 +22,15 @@ O projeto é uma inspiração aos sites TMDB e IMDB.Esta aplicação possui as s
 
 <details>
   <summary>
+    <strong>🕵🏽‍♀️ Api Utilizada</strong>
+  </summary>
+  
+  - [API](https://developers.mercadolivre.com.br/)
+
+</details>
+
+<details>
+  <summary>
     <strong>🪛 Scripts relevantes do <code>package.json</code></strong>
   </summary><br>
 
