@@ -25,7 +25,7 @@ O projeto é uma inspiração aos sites TMDB e IMDB.Esta aplicação possui as s
     <strong>🕵🏽‍♀️ Api Utilizada</strong>
   </summary>
   
-  - [API](https://developers.mercadolivre.com.br/)
+  - [API](https://www.themoviedb.org/documentation/api)
 
 </details>
 
